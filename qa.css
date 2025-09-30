@@ -20,7 +20,7 @@
 }
 
 .accordion::after{
-  content:"\25BC";
+  content:"\25BD";
   float:right;
   margin-left:10px;
   transition:transform 0.3s ease;
@@ -31,13 +31,14 @@
 }
 
 .accordion.active::after{
-  content:"\25B2";
+  content:"\25B3";
 }
 
 .panel {
   padding: 0 18px;
   display: none;
   overflow: hidden;
+  color:rgb(99, 98, 98);
 }
 
 body {
