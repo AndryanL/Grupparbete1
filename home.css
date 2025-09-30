@@ -28,7 +28,7 @@
   
 }
 
-h1  {
+h1:hover {
     color: rgb(255, 255, 255);
     font-size: 50px;
     transition: font-size 0.3s ease;
@@ -130,6 +130,58 @@ section{
     margin-right: auto;
    
  }
+ .sidebyside{
+  display: flex;
+  gap:32px; 
+  justify-content: center;
+  padding: 20px;
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  height: fit-content;
+  
+ 
 
+ }
 
+.imagecontainer {
+  flex: 1 1 0;
+max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+   box-shadow: 5px 5px 30px rgb(0, 0, 0);
+  padding: 20px;
+  font-family: "Arimo-Regular", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: linear-gradient(to bottom, black,white);
+  border-radius: 8px;
 
+}
+
+.textcontainer {
+flex: 1 1 0;
+max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+   box-shadow: 5px 5px 30px rgb(0, 0, 0);
+  padding: 20px;
+  font-family: "Arimo-Regular", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color:  linear-gradient(to bottom, black,white);
+  border-radius: 8px;
+
+} 
+
+.footer{
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  background-color: #000000;
+}
