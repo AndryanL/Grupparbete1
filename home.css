@@ -5,14 +5,16 @@
 
 
 .header {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  padding-bottom: 10px;
-  height: 60px;
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    padding-bottom: 10px;
+    height: 60px;
 }
 
 .logo {
