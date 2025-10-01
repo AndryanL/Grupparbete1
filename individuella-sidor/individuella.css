@@ -1,0 +1,29 @@
+main {
+    text-align: center;
+    background-color: rgba(215, 239, 194, 0.829);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.reflektion {
+    text-align: center;
+    font-size: 30px;
+    font-family: serif;
+}
+
+.information {
+    text-align: center;
+    list-style-position: inside;
+    font-family: serif;
+    list-style-type: none;
+    margin: auto;
+}
+
+ul {
+    padding-inline-start: 0;
+    font-size: 25px;
+}
+
+.svar {
+    font-size: 18px;
+    font-family: serif;
+}
