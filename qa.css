@@ -1,6 +1,6 @@
 .rubrik {
     text-align: center;
-    margin: 50px;
+    margin: 24px 0;
 }
 
 .accordion {
@@ -17,12 +17,15 @@
   background-color:transparent;
   border-bottom:1px solid rgb(193, 190, 190);
   font-family: serif;
+  position:relative;
 }
 
 .accordion::after{
   content:"\25BD";
-  float:right;
-  margin-left:10px;
+  /*float:right;
+  margin-left:20px;*/
+  position:absolute;
+  right:20px;
   transition:transform 0.3s ease;
 }
 
@@ -42,6 +45,12 @@
 }
 
 body {
-  margin:50px;
+  margin:16px;
   margin-bottom:300px;
+}
+
+@media(min-width:768px){
+  body {
+    margin:50px 100px;
+  }
 }
