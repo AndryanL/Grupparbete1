@@ -27,3 +27,14 @@ ul {
     font-size: 18px;
     font-family: serif;
 }
+
+img {
+    width: 200px;
+}
+
+.line {
+    border-top: 5px solid #122945;
+    width: 50px;
+    margin-left: 600px;
+    margin-bottom: 60px;
+}
