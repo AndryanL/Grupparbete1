@@ -1,0 +1,56 @@
+.rubrik {
+    text-align: center;
+    margin: 24px 0;
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  margin:auto;
+  margin-bottom:15px;
+  background-color:transparent;
+  border-bottom:1px solid rgb(193, 190, 190);
+  font-family: serif;
+  position:relative;
+}
+
+.accordion::after{
+  content:"\25BD";
+  /*float:right;
+  margin-left:20px;*/
+  position:absolute;
+  right:20px;
+  transition:transform 0.3s ease;
+}
+
+.active .accordion:hover {
+  background-color: #989595; 
+}
+
+.accordion.active::after{
+  content:"\25B3";
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  color:rgb(99, 98, 98);
+}
+
+body {
+  margin:16px;
+  margin-bottom:300px;
+}
+
+@media(min-width:768px){
+  body {
+    margin:50px 100px;
+  }
+}
