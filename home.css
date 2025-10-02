@@ -5,18 +5,18 @@
 
 
 .header {
-  margin-top: 10px;
-  
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  padding-bottom: 10px;
-  height: 60px;
-  
-  
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    padding-bottom: 10px;
+    height: 60px;
 }
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -84,7 +84,7 @@ h1 {
 }
 
 body{
-   margin: 0;
+  margin: 0;
   height: 100vh;
   background: linear-gradient(to bottom, #000000, #ffffff 50%);
   background-repeat: no-repeat;
