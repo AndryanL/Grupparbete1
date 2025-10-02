@@ -27,13 +27,13 @@
 .logo-text h1 {
   color: white;
   font-family: "Arimo-Regular", sans-serif;
-  font-size: 38px;
+  font-size: clamp(22px, 5vw, 38px);
   
 }
 
 h1 {
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: clamp(24px, 6vw, 50px);
     transition: font-size 0.3s ease;
 }
 
@@ -55,7 +55,7 @@ h1 {
 .logo-text p {
   margin: 0;
   font-family: "Arimo-Regular", sans-serif;
-  font-size: 18px;
+  font-size: clamp(12px, 2vw, 18px);
   
 }
 
@@ -72,7 +72,7 @@ h1 {
 .navigation li a {
   text-decoration: none;
   font-family: "Arimo-Regular", sans-serif;
-  font-size: 18px;
+  font-size: clamp(14px, 2.5vw, 18px);
   color: #ffffff;
   transition: color 0.2s ease-in-out;
 }
@@ -95,7 +95,7 @@ body{
 section{
   padding: 20px;
   font-family: "Arimo-Regular", sans-serif;
-  font-size: 18px;
+   font-size: clamp(14px, 2vw, 18px);
   color: #ffffff;
   max-width: 1200px;
   margin: 40px auto;
@@ -106,7 +106,7 @@ section{
  .introduction{
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 34px;
+    font-size: clamp(20px, 5vw, 34px);
     margin-bottom: 20px;
     font-weight:bold;
  }
@@ -120,7 +120,7 @@ section{
     color: rgb(0, 0, 0);
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: clamp(14px, 2.5vw, 20px);
     margin-top: 20px;
     padding: 10px 5px;
     font-weight:lighter;
@@ -153,13 +153,12 @@ section{
   margin-right: auto;
   width: fit-content;
   height: fit-content;
-  
- 
-
  }
+
+
 .over{
   text-decoration: underline;
-  font-size: 50px;
+  font-size: clamp(24px, 6vw,50px);
   font-weight: lighter;
 }
 
@@ -183,10 +182,14 @@ section{
 .homeimg {
     border-radius: 25px;
     box-shadow: 0px 0px 30px rgb(0, 0, 0);
-    width: 600px;
-    margin: 40px;
-
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
+
+   /* margin: 40px;
+
+}*/
 
 .textcontainer {
     flex: 1 1 0;
@@ -353,10 +356,11 @@ section{
     height: 70px;
   }
 
-  .bvikon{
-  margin-left: 20px;
-  margin-right: 20px
+  .sidebyside {
+    flex-direction: column;
+    align-items: center;
   }
+
 }
 
 
@@ -415,4 +419,16 @@ section{
     width: 60px;
     height: 60px;
   }
+
+  .sidebyside {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+.footer-title,
+.footer-names,
+.footer-names1 {
+  font-size: clamp(14px, 2vw, 20px);
+}
+
