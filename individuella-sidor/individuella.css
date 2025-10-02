@@ -29,10 +29,39 @@ ul {
     margin-bottom: 60px;
     margin: 40px;
 }
+
+.commits {
+    color: black;
+    font-size: 25px;
+}
+
 #individuell-bild {
     width: auto;
     height: 500px;
     margin: 40px;
+}
+
+.social-media {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.social-media li {
+    display: inline-block;
+}
+
+.social-media li a {
+  display: inline-block;
+  color:rgb(255, 168, 92);
+  padding: 5px;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.social-media li a:hover {
+  color: pink;
 }
 
 .container * {
