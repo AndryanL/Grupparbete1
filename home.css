@@ -155,55 +155,59 @@ section{
   font-size: 50px;
   font-weight: lighter;
 }
+
 .imagecontainer {
-  
-  flex: 1 1 0;
-max-width: 600px;
+    flex: 1 1 0;
+    max-width: 600px;
     text-align: center;
     margin-top: 20px;
-   box-shadow: 5px 5px 30px rgb(0, 0, 0);
-  padding: 20px;
-  font-family: "Arimo-Regular", sans-serif;
-  font-size: 25px;
-  color: #000000;
-  max-width: 1200px;
-  margin: 40px auto;
-  background-color: linear-gradient(to bottom, black,white);
-  border-radius: 25px;
+    box-shadow: 5px 5px 30px rgb(0, 0, 0);
+    padding: 20px;
+    font-family: "Arimo-Regular", sans-serif;
+    font-size: 25px;
+    color: #000000;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: linear-gradient(to bottom, black,white);
+    border-radius: 25px;
+
+}
+
+.homeimg {
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    width: 600px;
+    margin: 40px;
 
 }
 
 .textcontainer {
-flex: 1 1 0;
-max-width: 600px;
+    flex: 1 1 0;
+    max-width: 600px;
     text-align: center;
     margin-top: 20px;
-   box-shadow: 5px 5px 30px rgb(0, 0, 0);
-  padding: 20px;
-  font-family: "Arimo-Regular", sans-serif;
-  font-size: 18px;
-  color: #000000;
-  max-width: 1200px;
-  margin: 40px auto;
-  background-color:  linear-gradient(to bottom, black 92,79%,white);
-  border-radius: 25px;
-
+    box-shadow: 5px 5px 30px rgb(0, 0, 0);
+    padding: 20px;
+    font-family: "Arimo-Regular", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color:  linear-gradient(to bottom, black 92,79%,white);
+    border-radius: 25px;
 } 
 
 .footer{
-  color: #ffffff;
-  text-align: center;
-  padding: 30px;
-  background-color: black;
-  display: flex;
-  gap:85px; 
-  justify-content: center;
-  padding: 5px;
-  
-  margin-left: auto;
-  margin-right: auto;
-  
-
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    display: flex;
+    gap:85px; 
+    justify-content: center;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-title{
@@ -249,6 +253,16 @@ max-width: 600px;
   font-size: 20px;
   
 
+}
+
+#img {
+    width: 100px;
+    height: 100px; /* keeps aspect ratio */
+}
+
+#img:hover{
+    transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
+    box-shadow: 0px 0px 30px white;
 }
 
 .thegroup {
