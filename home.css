@@ -78,7 +78,8 @@ h1 {
 }
 
 .navigation li a:hover {
-  color: #ffffff;
+  color: #00b7ff;
+  text-shadow: 0px 0px 30px white;
 }
 
 body{
@@ -249,14 +250,14 @@ a{
   text-decoration: underline;
 }
 
-img {
+.thegroup {
   width: 100px;
   height: 100px; /* keeps aspect ratio */
   
 
 }
 
-img:hover{
+.thegroup:hover{
   transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
   box-shadow: 0px 0px 30px white;
 }
