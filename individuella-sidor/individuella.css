@@ -29,6 +29,12 @@ ul {
     margin-bottom: 60px;
     margin: 40px;
 }
+
+.commits {
+    color: black;
+    font-size: 25px;
+}
+
 #individuell-bild {
     width: auto;
     height: 500px;
