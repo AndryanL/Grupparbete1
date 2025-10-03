@@ -1,46 +1,57 @@
+
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to bottom, #000000, #ffffff 50%) no-repeat fixed;
+    background-size: cover;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html, body {
-    background: linear-gradient(to bottom, black, white) no-repeat;
+    height: 100vh;
     font-family: "Arimo-Regular", sans-serif;
+    padding:30px;
 }
 
-main {
-    margin: 20px;
-    padding: 15px;
+
+
+.header {
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    padding-bottom: 10px;
+    height: 60px;
+    flex-wrap: wrap;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  height: 60px;
-  background: linear-gradient(180deg, black, #919191);
-  border-bottom: 1px solid #ddd;
-}
 .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .logo-text h1 {
   color: white;
   font-family: "Arimo-Regular", sans-serif;
-  font-size: 38px;
+  font-size: clamp(22px, 5vw, 38px);
   
 }
 
 h1 {
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: clamp(24px, 6vw, 50px);
     transition: font-size 0.3s ease;
 }
 
@@ -62,7 +73,7 @@ h1 {
 .logo-text p {
   margin: 0;
   font-family: "Arimo-Regular", sans-serif;
-  font-size: 18px;
+  font-size: clamp(12px, 2vw, 18px);
   
 }
 
@@ -79,149 +90,367 @@ h1 {
 .navigation li a {
   text-decoration: none;
   font-family: "Arimo-Regular", sans-serif;
-  font-size: 18px;
+  font-size: clamp(14px, 2.5vw, 18px);
   color: #ffffff;
   transition: color 0.2s ease-in-out;
 }
 
+
 .navigation li a:hover {
-  color: #ffffff;
+  color: #00b7ff;
+  text-shadow: 0px 0px 30px white;
 }
 
-header {
-    color:#ccc2b2;
-    padding: 10px 0;
-    border-bottom: 2px solid lightslategray;
-    margin: 10px;
-    display: flex;
-    justify-content: space-between;
 
-}
 
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-nav {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 18px;
-    flex-wrap: nowrap;
-}
-
-main {
+/* here has diffrent header code with home and qa, so that's why I changed. */
+/*.header {
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    justify-content: space-between;
+    padding: 0 16px;
+    padding-bottom: 10px;
+    height: 60px;
+    flex-wrap: wrap;
 }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.logo-text h1 {
+  color: white;
+  font-family: "Arimo-Regular", sans-serif;
+  font-size: 38px;
+  
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: clamp(24px, 6vw, 50px);
+    transition: font-size 0.3s ease;
+}
+
+
+.undertext{
+    color: rgb(255, 255, 255);
+}
+
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    flex-wrap: wrap;
+  
+}
+
+
+.logo-text p {
+    margin: 0;
+    font-family: "Arimo-Regular", sans-serif;
+    font-size: clamp(12px, 2vw, 18px);
+  
+}
+
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-family: "Arimo-Regular", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    transition: color 0.2s ease-in-out;
+    }
+
+.navigation li a:hover {
+    color: #ffffff;
+} */
 
 .footer {
-    display: grid;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    display: flex;
+    gap:85px; 
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-}
-
-    
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.footer{
-  color: #ffffff;
-  text-align: center;
-  padding: 30px;
-  background-color: black;
-  display: flex;
-  gap:85px; 
-  justify-content: center;
-  padding: 5px;
-  
-  margin-left: auto;
-  margin-right: auto;
-  
 
 }
 
 .footer-title{
   
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 0px 0px 20px white;
-  color: rgb(255, 255, 255);
-  font-family: "Arimo-Regular", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
- 
-  padding-right: 10px;
-  background: linear-gradient(to top, #000000, #ffffff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 20px white;
+    color: rgb(255, 255, 255);
+    font-family: "Arimo-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    
+    padding-right: 10px;
+    background: linear-gradient(to top, #000000, #ffffff);
+    flex-wrap: wrap;
 }
 
 .footer-names{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-  flex: 1 1 0;
+    flex: 1 1 0;
 
-  color: white;
-  font-family: "Arimo-Regular", sans-serif;
-  font-size: 20px;
+    color: white;
+    font-family: "Arimo-Regular", sans-serif;
+    font-size: 20px;
   
 
 }
 .footer-names1{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-  flex: 1 1 0;
+    flex: 1 1 0;
 
-  color: white;
-  font-family: "Arimo-Regular", sans-serif;
-  font-size: 20px;
-  
+    color: white;
+    font-family: "Arimo-Regular", sans-serif;
+    font-size: 20px;
+    
 
 }
 
 a{
-  color: white;
-  text-decoration: underline;
+    color: white;
+    text-decoration: underline;
 }
 
-img {
-  width: 100px;
-  height: 100px; /* keeps aspect ratio */
-  
+img{
+    width: 100px;
+    height: 100px; /*keeps aspect ratio */
 
 }
+
 
 img:hover{
-  transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
-  box-shadow: 0px 0px 30px white;
+    transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
+    box-shadow: 0px 0px 30px white;
 }
 
+.scene {
+  width: 200px;
+  height: 350px;
+  perspective: 1000px;
+  margin: 0 auto 30px;
+  margin-left: 20px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+ 
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform: rotateY(0deg);
+}
+
+.scene:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.front {
+  background-color: #fff;
+  transform: translateZ(150px);
+}
+
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back {
+  background-color: #333;
+  color: white;
+  transform: rotateY(180deg) translateZ(150px);
+  padding: 20px;
+  flex-direction: column;
+}
+
+.back h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.back p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo-text h1 {
+    font-size: 28px;
+  }
+
+  .logo-text p {
+    font-size: 14px;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .navigation li a {
+    font-size: 16px;
+  }
+
+  section {
+    margin: 20px 10px;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-title, .footer-names, .footer-names1 {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .logo-text h1 {
+    font-size: 22px;
+  }
+
+  .logo-text p {
+    font-size: 12px;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .navigation li a {
+    font-size: 14px;
+  }
+
+  section {
+    margin: 15px 8px;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .accordion {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .footer-title,
+  .footer-names,
+  .footer-names1 {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.footer-title,
+.footer-names,
+.footer-names1 {
+  font-size: clamp(14px, 2vw, 20px);
+}

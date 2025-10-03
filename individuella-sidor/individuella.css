@@ -29,6 +29,17 @@ ul {
     margin-bottom: 60px;
     margin: 40px;
 }
+
+.commits {
+    color: black;
+    font-size: 25px;
+}
+
+.commits:hover {
+    color: #00b7ff;
+    text-shadow: 0px 0px 30px white;
+}
+
 #individuell-bild {
     width: auto;
     height: 500px;
@@ -48,14 +59,15 @@ ul {
 
 .social-media li a {
   display: inline-block;
-  color:rgb(255, 168, 92);
+  color:black;
   padding: 5px;
   font-size: 40px;
   text-decoration: none;
 }
 
 .social-media li a:hover {
-  color: pink;
+  color: #00b7ff;
+  text-shadow: 0px 0px 30px white;
 }
 
 .container * {
@@ -136,7 +148,8 @@ h1 {
     }
 
 .navigation li a:hover {
-    color: #ffffff;
+  color: #00b7ff;
+  text-shadow: 0px 0px 30px white;
 }
 
 body{
@@ -277,6 +290,6 @@ img {
 
 img:hover{
     transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
-    box-shadow: 0px 0px 30px white;
+    box-shadow: 0px 0px 30px rgb(0, 171, 201);
 }
 
