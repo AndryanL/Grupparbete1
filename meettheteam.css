@@ -255,11 +255,7 @@ a{
 
 img{
     width: 100px;
-<<<<<<< HEAD
-    height: 100px; /* keeps aspect ratio */
-=======
     height: 100px; /*keeps aspect ratio */
->>>>>>> origin/jia
 
 }
 
@@ -278,74 +274,6 @@ img:hover{
   margin-top: 100px;
   margin-bottom: 70px;
  
-<<<<<<< HEAD
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  transform: rotateY(0deg);
-}
-
-.scene:hover .card {
-  transform: rotateY(180deg);
-}
-
-.card-face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.front {
-  background-color: #fff;
-  transform: translateZ(150px);
-}
-
-.front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.back {
-  background-color: #333;
-  color: white;
-  transform: rotateY(180deg) translateZ(150px);
-  padding: 20px;
-  flex-direction: column;
-}
-
-.back h2 {
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.back p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-
-=======
->>>>>>> origin/jia
 }
 
 .card {
