@@ -89,7 +89,8 @@ body{
   background: linear-gradient(to bottom, #000000, #ffffff 50%);
   background-repeat: no-repeat;
   background-attachment: fixed;  
-  background-size: cover;       
+  background-size: cover;  
+  padding:30px;     
 }
 
 section{
