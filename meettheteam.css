@@ -251,7 +251,7 @@ a{
 
 img{
     width: 100px;
-    height: 100px; keeps aspect ratio 
+    height: 100px; /*keeps aspect ratio */
 
 }
 
