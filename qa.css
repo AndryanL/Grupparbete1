@@ -1,6 +1,7 @@
 .rubrik {
     text-align: center;
     margin: 24px y;
+    color:white;
 }
 
 .header {
@@ -100,8 +101,8 @@ h1 {
 
 .accordion::after{
   content:"\25BD";
-  /*float:right;
-  margin-left:20px;*/
+  float:right;
+  margin-left:20px;
   position:absolute;
   right:20px;
   transition:transform 0.3s ease;
@@ -119,7 +120,7 @@ h1 {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  color:rgb(99, 98, 98);
+  color:rgb(8, 8, 8);
 }
 
 body {
@@ -131,6 +132,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover; 
+  padding:30px;
 }
 
 
