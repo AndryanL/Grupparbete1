@@ -16,6 +16,9 @@ body{
     height: 100vh;
     font-family: "Arimo-Regular", sans-serif;
     padding:30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -266,14 +269,15 @@ img:hover{
 }
 
 .scene {
-  width: 200px;
-  height: 350px;
+  width: 300px;
+  height: 500px;
   perspective: 1000px;
   margin: 0 auto 30px;
   margin-left: 20px;
   margin-top: 100px;
   margin-bottom: 70px;
- 
+  margin-right: 50px;
+  
 }
 
 .card {
@@ -323,12 +327,12 @@ img:hover{
 
 .back h2 {
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .back p {
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 12px;
+  line-height: 1.2;
 }
 
 main {
@@ -338,6 +342,7 @@ main {
     align-items: center;
     gap: 20px;
     padding: 20px;
+    position: sticky;
 
 }
 
@@ -519,4 +524,11 @@ main {
 .footer-names,
 .footer-names1 {
   font-size: clamp(14px, 2vw, 20px);
+}
+
+#om {
+  font-size: clamp(12px, 1.5vw, 16px);
+  text-decoration: underline;
+  color: #cbb197;
+  font-weight: bold;
 }
