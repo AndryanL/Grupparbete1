@@ -18,122 +18,13 @@ body{
     padding:30px;
 }
 
+
+
+
 .header {
     position: sticky;
     top: 0;
     margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-    padding-bottom: 10px;
-    height: 60px;
-    flex-wrap: wrap;
-
-  }
-
-.container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  height: 60px;
-  background: linear-gradient(180deg, black, #919191);
-  border-bottom: 1px solid #ddd;
-}
-.logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-text h1 {
-  color: white;
-  font-family: "Arimo-Regular", sans-serif;
-  font-size: 38px;
-  
-}
-
-h1 {
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    transition: font-size 0.3s ease;
-}
-
-
-.undertext{
-    color: rgb(255, 255, 255);
-}
-
-
-.logo-text {
-  
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-  
-}
-
-
-.logo-text p {
-  margin: 0;
-  font-family: "Arimo-Regular", sans-serif;
-  font-size: 18px;
-  
-}
-
-
-.navigation ul {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation li a {
-  text-decoration: none;
-  font-family: "Arimo-Regular", sans-serif;
-  font-size: 18px;
-  color: #ffffff;
-  transition: color 0.2s ease-in-out;
-}
-
-.navigation li a:hover {
-  color: #ffffff;
-}
-
-header {
-    color:#ccc2b2;
-    padding: 10px 0;
-    border-bottom: 2px solid lightslategray;
-    margin: 10px;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-nav {
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 18px;
-    flex-wrap: nowrap;
-}
-
-main {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -364,7 +255,7 @@ a{
 
 img{
     width: 100px;
-    height: 100px; /*keeps aspect ratio */
+    height: 100px; /* keeps aspect ratio */
 
 }
 
@@ -375,13 +266,14 @@ img:hover{
 }
 
 .scene {
-  width: 300px;
-  height: 500px;
+  width: 200px;
+  height: 350px;
   perspective: 1000px;
   margin: 0 auto 30px;
   margin-left: 20px;
   margin-top: 100px;
   margin-bottom: 70px;
+ 
 }
 
 .card {
@@ -435,8 +327,73 @@ img:hover{
 }
 
 .back p {
-  font-size: 12px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform: rotateY(0deg);
+}
+
+.scene:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.front {
+  background-color: #fff;
+  transform: translateZ(150px);
+}
+
+.front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back {
+  background-color: #333;
+  color: white;
+  transform: rotateY(180deg) translateZ(150px);
+  padding: 20px;
+  flex-direction: column;
+}
+
+.back h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.back p {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 main {
