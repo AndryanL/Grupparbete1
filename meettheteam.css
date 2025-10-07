@@ -444,7 +444,7 @@ main {
   font-size: clamp(14px, 2vw, 20px);
 }
 
-#om {
+.om {
   font-size: clamp(12px, 1.5vw, 16px);
   text-decoration: underline;
   color: #cbb197;
