@@ -299,6 +299,14 @@ img:hover{
 
 .commitspic {
     height: 300px;
-    width: auto;
+    width: 650px;
+    border-radius: 5px;
 }
+
+.lighthousepic {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+}
+
 
