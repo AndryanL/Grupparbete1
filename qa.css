@@ -194,13 +194,13 @@ body {
 
 }
 
-#img {
+.img {
     width: 100px;
     height: 100px; /* keeps aspect ratio */
     
 }
 
-#img:hover{
+.img:hover{
     transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
     box-shadow: 0px 0px 30px rgb(0, 171, 201);
 }
