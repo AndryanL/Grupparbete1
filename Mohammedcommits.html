@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Commits — Grupparbete1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+    }
+    .commit {
+      border-bottom: 1px solid #ddd;
+      margin: 10px 0;
+      padding: 10px 0;
+    }
+    .commit-message {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+    .commit-meta {
+      color: #555;
+      font-size: 0.9em;
+    }
+    .commit-sha {
+      font-family: monospace;
+      color: #888;
+      font-size: 0.85em;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Commits — Grupparbete1</h1>
+  <div id="commits">Loading my commits...</div>
+
+  <script>
+    const owner = "AndryanL";
+    const repo = "Grupparbete1";
+    const author = "mohammedalam-fux";
+    const displayAuthorName = "Mohammed";
+
+    const commitsDiv = document.getElementById("commits");
+
+    async function fetchMyCommits() {
+      try {
+        const response = await fetch(
+          `https://api.github.com/repos/${owner}/${repo}/commits?author=${author}&per_page=100`
+        );
+        if (!response.ok) throw new Error(`GitHub API error: ${response.status}`);
+        const commits = await response.json();
+        displayCommits(commits);
+      } catch (err) {
+        console.error("Error:", err);
+        commitsDiv.innerText = "Could not load commits.";
+      }
+    }
+
+    function displayCommits(commits) {
+      if (commits.length === 0) {
+        commitsDiv.innerText = "No commits found for this user.";
+        return;
+      }
+
+      commitsDiv.innerHTML = "";
+      commits.forEach(commit => {
+        const el = document.createElement("div");
+        el.className = "commit";
+
+        const date = new Date(commit.commit.author.date).toLocaleString();
+        const sha = commit.sha;
+        const message = commit.commit.message;
+
+        el.innerHTML = `
+          <div class="commit-message">${message}</div>
+          <div class="commit-meta">
+            Author: ${displayAuthorName} | Date: ${date}
+          </div>
+          <div class="commit-sha">SHA: ${sha}</div>
+        `;
+
+        commitsDiv.appendChild(el);
+      });
+    }
+
+    fetchMyCommits();
+  </script>
+</body>
+</html>
