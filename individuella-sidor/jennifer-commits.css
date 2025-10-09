@@ -5,6 +5,11 @@ body {
     font-size: 18px;
     text-align: center;
     cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+tr {
+    background-color:rgb(51, 48, 48);
 }
 
 tr:hover {
