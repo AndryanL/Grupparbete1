@@ -48,3 +48,8 @@ th {
     text-shadow: 0px 0px 10px rgb(206, 214, 217);
     border-radius: 10px;
 }
+
+table {
+    border: 1px relative transparent; 
+    
+}
