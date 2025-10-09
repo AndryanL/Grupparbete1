@@ -4,28 +4,43 @@ body{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     cursor: pointer;
+    
 }
 
 
 table {
-    border: 1px relative transparent; 
+    border: 1px white solid; 
+    border-collapse: collapse;
     
     
+}
+tr{
+    border: 1px white solid; 
+    border-collapse: collapse; 
 }
 
 tr:hover {
     color: maroon;
     background-color: white;
     color: black;
-    border: 1px solid transparent;   
+       
     transition: 0.2s ease;
     text-shadow: 0px 0px 10px white;
     
+
+}
+td{
+    border: 1px white solid; 
+    border-collapse: collapse; 
+    padding: 8px;
 }
 
 
 th {
+    padding: 8px;
     width: 200px;
     font-size: 25px;
+      border: 1px white solid; 
+    border-collapse: collapse;
     
 }
