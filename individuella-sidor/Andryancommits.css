@@ -1,22 +1,27 @@
 body {
-    color: #ffff00;
+    color: yellow;
     background-color: black;
     font-family: "Monaco", monospace;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
     cursor: pointer;
 }
 
+
+.table td,
+.table th {
+    border: 2px solid yellow;
+    padding: 8px;
+}
+
 tr:hover {
-    color: #00b7ff;
-    background-color: white;
     color: black;
-    border: 1px solid transparent;   
+    background-color: white;
     transition: 0.2s ease;
     text-shadow: 0px 0px 10px white;
 }
 
-th {
-    width: 200px;
-    font-size: 25px;
+.table {
+    border-collapse: collapse;
+    border: 2px solid yellow;
 }
