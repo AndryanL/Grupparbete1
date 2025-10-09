@@ -15,8 +15,10 @@ tr:hover {
     text-shadow: none; 
 }
 
-th {
+table,th,td {
     width: 200px;
     font-size: 25px;
-    color: #003399; 
+    color: #003399;
+    border:1px solid #000;
+    border-collapse:collapse; 
 }
