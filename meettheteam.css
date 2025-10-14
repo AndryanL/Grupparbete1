@@ -452,13 +452,10 @@ main {
 }
 
 .hamburger {
-  display: flex;
+  display: none;
   flex-direction: column;
   cursor: pointer;
-  padding: 10px;
-  justify-content: flex-end;
-  align-self: flex-end;
-  position: sticky;
+  padding: 0.5rem;
 }
         
 .hamburger span {
