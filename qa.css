@@ -370,7 +370,7 @@ body {
   .navigation {
     display: none;
     flex-direction: column;
-    position: none;
+    position: sticky;
     top: 0px;
     left: 0;
     
@@ -395,6 +395,7 @@ body {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+
 
 .chasLogo{
    max-width: 120px;
