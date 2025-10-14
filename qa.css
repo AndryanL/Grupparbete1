@@ -370,7 +370,7 @@ body {
   .navigation {
     display: none;
     flex-direction: column;
-    position: sticky;
+    position: none;
     top: 0px;
     left: 0;
     
