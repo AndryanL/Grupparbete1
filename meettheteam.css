@@ -512,3 +512,14 @@ main {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
+
+.chasLogo{
+   max-width: 120px;
+   height: auto;
+}
+.header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
