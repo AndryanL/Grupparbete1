@@ -1,20 +1,20 @@
 .container * {
   box-sizing: border-box;
-  
 }
 
 
+
 .header {
-    position: sticky;
-    top: 0;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-    padding-bottom: 10px;
-    height: 60px;
+  position: sticky;
+  top: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  padding-bottom: 10px;
+  height: 60px;
 }
 
 .logo {
@@ -28,27 +28,27 @@
   color: white;
   font-family: "Arimo-Regular", sans-serif;
   font-size: clamp(22px, 5vw, 38px);
-  
+
 }
 
 h1 {
-    color: rgb(255, 255, 255);
-    font-size: clamp(24px, 6vw, 50px);
-    transition: font-size 0.3s ease;
+  color: rgb(255, 255, 255);
+  font-size: clamp(24px, 6vw, 50px);
+  transition: font-size 0.3s ease;
 }
 
 
-.undertext{
-    color: rgb(255, 255, 255);
+.undertext {
+  color: rgb(255, 255, 255);
 }
 
 
 .logo-text {
-  
+
   display: flex;
   flex-direction: column;
   line-height: 1.2;
-  
+
 }
 
 
@@ -56,7 +56,7 @@ h1 {
   margin: 0;
   font-family: "Arimo-Regular", sans-serif;
   font-size: clamp(12px, 2vw, 18px);
-  
+
 }
 
 
@@ -83,146 +83,149 @@ h1 {
   text-shadow: 0px 0px 30px white;
 }
 
-body{
+body {
   margin: 0;
   height: 100vh;
   background: linear-gradient(to bottom, #000000, #ffffff 50%);
   background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;  
-  padding:30px;     
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0;
 }
 
-section{
+section {
   padding: 20px;
   font-family: "Arimo-Regular", sans-serif;
-   font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(14px, 2vw, 18px);
   color: #ffffff;
   max-width: 1200px;
   margin: 40px auto;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 25px;
-  
+
 }
- .introduction{
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: clamp(20px, 5vw, 34px);
-    margin-bottom: 20px;
-    font-weight:bold;
- }
 
- .introstart{
-    text-align: center;
- }
+.introduction {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: clamp(20px, 5vw, 34px);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
 
- .introend{
-   
-    color: rgb(0, 0, 0);
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: clamp(14px, 2.5vw, 20px);
-    margin-top: 20px;
-    padding: 10px 5px;
-    font-weight:lighter;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-   overflow: none;
-   display: block;
-   width: fit-content;
-   margin-left: auto;
-    margin-right: auto;
- }
+.introstart {
+  text-align: center;
+}
 
- .introend:hover {
-    background-color: #00b7ff;
-    box-shadow: 0px 0px 20px white;
- }
+.introend {
 
- .introend a {
-    color: black;
-    text-decoration: none;
- }
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: clamp(14px, 2.5vw, 20px);
+  margin-top: 20px;
+  padding: 10px 5px;
+  font-weight: lighter;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: none;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
 
- .sidebyside{
+.introend:hover {
+  background-color: #00b7ff;
+  box-shadow: 0px 0px 20px white;
+}
+
+.introend a {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebyside {
   display: flex;
-  gap:32px; 
+  gap: 32px;
   justify-content: center;
   padding: 20px;
-  margin-top:20px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
   height: fit-content;
- }
+}
 
 
-.over{
+.over {
   text-decoration: underline;
-  font-size: clamp(24px, 6vw,50px);
+  font-size: clamp(24px, 6vw, 50px);
   font-weight: lighter;
 }
 
 .imagecontainer {
-    flex: 1 1 0;
-    max-width: 600px;
-    text-align: center;
-    margin-top: 20px;
-    box-shadow: 5px 5px 30px rgb(0, 0, 0);
-    padding: 20px;
-    font-family: "Arimo-Regular", sans-serif;
-    font-size: 25px;
-    color: #000000;
-    max-width: 1200px;
-    margin: 40px auto;
-    background-color: linear-gradient(to bottom, black,white);
-    border-radius: 25px;
+  flex: 1 1 0;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 5px 5px 30px rgb(0, 0, 0);
+  padding: 20px;
+  font-family: "Arimo-Regular", sans-serif;
+  font-size: 25px;
+  color: #000000;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: linear-gradient(to bottom, black, white);
+  border-radius: 25px;
 
 }
 
 .homeimg {
-    border-radius: 25px;
-    box-shadow: 0px 0px 30px rgb(0, 0, 0);
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+  border-radius: 25px;
+  box-shadow: 0px 0px 30px rgb(0, 0, 0);
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
-   /* margin: 40px;
+/* margin: 40px;
 
 }*/
 
 .textcontainer {
-    flex: 1 1 0;
-    max-width: 600px;
-    text-align: center;
-    margin-top: 20px;
-    box-shadow: 5px 5px 30px rgb(0, 0, 0);
-    padding: 20px;
-    font-family: "Arimo-Regular", sans-serif;
-    font-size: 18px;
-    color: #000000;
-    max-width: 1200px;
-    margin: 40px auto;
-    background-color:  linear-gradient(to bottom, black 92,79%,white);
-    border-radius: 25px;
-} 
-
-.footer{
-    color: #ffffff;
-    text-align: center;
-    padding: 30px;
-    background-color: black;
-    display: flex;
-    gap:85px; 
-    justify-content: center;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: auto;
+  flex: 1 1 0;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 5px 5px 30px rgb(0, 0, 0);
+  padding: 20px;
+  font-family: "Arimo-Regular", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: linear-gradient(to bottom, black 92, 79%, white);
+  border-radius: 25px;
 }
 
-.footer-title{
-  
+.footer {
+
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.footer-title {
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,55 +236,62 @@ section{
   font-size: 24px;
   font-weight: bold;
   padding-right: 10px;
+  max-width: 100%;
+
   background: linear-gradient(to top, #000000, #ffffff);
 }
 
-.footer-names{
+.footer-names {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1 1 0;
+  flex: 1 1 auto;
   color: white;
   font-family: "Arimo-Regular", sans-serif;
   font-size: 20px;
+  min-width: 0;
 }
-.footer-names1{
+
+.footer-names1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1 1 0;
+  flex: 1 1 auto;
   color: white;
   font-family: "Arimo-Regular", sans-serif;
   font-size: 20px;
-  
+  min-width: 0;
+
 
 }
 
 .img {
-    width: 100px;
-    height: 100px; /* keeps aspect ratio */
+  width: 100px;
+  height: 100px;
+  /* keeps aspect ratio */
 }
 
-.img:hover{
-    transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
-    box-shadow: 0px 0px 30px white;
+.img:hover {
+  transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
+  box-shadow: 0px 0px 30px white;
 }
 
 .thegroup {
   width: 100px;
-  height: 100px; /* keeps aspect ratio */
-  
+  height: 100px;
+  /* keeps aspect ratio */
+
 
 }
 
-.thegroup:hover{
+.thegroup:hover {
   transform: matrix3d(1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1.1, 0, 0, 0, 0, 1);
   box-shadow: 0px 0px 30px rgb(0, 171, 201);
 }
 
-.textaboveimg{
+.textaboveimg {
   background-color: white;
   border-radius: 25px;
   box-shadow: 0px 0px 30px black;
@@ -293,7 +303,7 @@ section{
   margin-right: 30px;
 }
 
-.textbelowimg{
+.textbelowimg {
   background-color: white;
   border-radius: 25px;
   box-shadow: 0px 0px 30px black;
@@ -302,6 +312,7 @@ section{
   text-align: center;
   margin: 30px;
 }
+
 .bvikon {
   width: 100%;
   max-width: 300px;
@@ -352,7 +363,9 @@ section{
     padding: 20px;
   }
 
-  .footer-title, .footer-names, .footer-names1 {
+  .footer-title,
+  .footer-names,
+  .footer-names1 {
     font-size: 16px;
     padding: 5px 0;
   }
@@ -437,4 +450,3 @@ section{
 .footer-names1 {
   font-size: clamp(14px, 2vw, 20px);
 }
-
